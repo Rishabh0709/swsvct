@@ -1,0 +1,233 @@
+/* main.css */
+
+
+/* color standardisation for website */
+h1 {
+	color : #ff0000;
+}
+
+h2 {
+  color: #0000ff;
+}
+
+h3 {
+  color: #95191a;
+}
+
+
+
+
+
+/* Wrapper for combined bars */
+.header-wrapper {
+  position: relative;
+  background: #f8f9fa;
+  height: 140px; /* Sum of bars height */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  width: 90px;
+  height: 100%;  /* full height of container */
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+#topContactBar, #mainNav {
+  margin-left: 90px; /* space for logo on the left */
+}
+
+#topContactBar {
+  height: 40px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #0d6efd;
+}
+
+#mainNav {
+  height: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .header-wrapper {
+    height: auto;
+  }
+  .logo-container {
+    position: static;
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  #topContactBar, #mainNav {
+    margin-left: 0;
+  }
+}
+
+/* Show dropdown menu on hover for desktop */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  /* Optional: add fade effect */
+  .navbar-nav .dropdown > .dropdown-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+  }
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+/* Shrunk navbar styles */
+#mainNav.shrink {
+  padding: 8px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo-container img {
+  max-height: 90px;
+  width: auto;
+  display: block;
+  transition: max-height 0.3s ease;
+  background: transparent;
+  border-radius: 0;
+}
+
+#mainNav.shrink .logo-container img {
+  max-height: 50px;
+}
+
+/* Offset for navbar menus so they do not overlap logo */
+#mainNav .container {
+  padding-left: 140px; /* space for logo */
+  position: relative;
+}
+
+/* Footer styles */
+footer.bg-dark {
+  color: #f8f9fa;
+}
+
+footer h5 {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+.header-bar {
+  position:relative;
+  min-height:120px; /* Adjust to fit logo and bars */
+}
+
+.header-bar img {
+  background: transparent !important; /* Remove background */
+  border-radius: 0;
+  max-height: 90px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.logo-container {
+  left: 12px; /* Padding from left edge */
+  z-index: 10;
+}
+
+.contact-info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-bar nav {
+    padding-left: 0 !important;
+  }
+  .logo-container {
+    position: static;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* Shrinking Logo effect */
+      .navbar-brand img {
+          transition: .4s;
+          height: 80px;
+      }
+      .navbar.shrink .navbar-brand img {
+          height: 40px;
+      }
+      /* Side-by-side cards */
+      .side-section .card {
+          width: 100%;
+      }
+      @media (min-width: 768px) {
+        .side-section {
+          display: flex; gap:20px;
+        }
+        .side-section > div { flex:1; }
+      }
+      /* Center carousel indicators */
+      .carousel-indicators {
+          bottom: -30px;
+      }
+      /* Mission Section */
+      #mission {
+        background:#f8f9fa;
+        padding:30px 0;
+      }
+      /* Moving counters */
+      .impact-counter {
+        font-size:2em;
+        font-weight:700;
+      }
+      /* Footer */
+      footer {
+        background:#212529;
+        color:white;
+        padding:30px 0;
+        text-align:center;
+      }
+
+/* For success stories */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.swiper-slide .card {
+  width: 100%;
+  max-width: 320px;
+}
