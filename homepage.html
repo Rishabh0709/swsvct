@@ -12,9 +12,18 @@
     <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 </head>
 <body>
+
+<style>
+  .counter-card {
+    transition: box-shadow 0.3s ease;
+  }
+  .counter-card:hover {
+    box-shadow: 0 12px 24px rgba(26, 35, 126, 0.25);
+  }
+</style>
 
 <!-- Header will load here -->
   <div id="header-placeholder"></div>
@@ -67,31 +76,45 @@
 </section>
 
 <!-- Our Impact (animated numbers + icons) -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Our Impact</h2>
-  <div class="row text-center">
-    <div class="col-md-3">
-      <i class="fa-solid fa-graduation-cap fa-3x text-info"></i>
-      <div class="impact-counter" data-count="35000">0</div>
-      <p>Scholarships to more than 35,000 girl students</p>
+<section class="container my-5 text-center">
+  <h2 class="mb-5" style="color:#1a237e; font-weight:700;">Our Trust at a Glance</h2>
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="p-4 shadow rounded bg-light h-100 d-flex flex-column align-items-center counter-card">
+        <i class="fa-solid fa-graduation-cap fa-3x text-primary mb-3"></i>
+        <div class="fs-2 fw-bold">35,000+</div>
+        <div class="fs-6 mt-2">Scholarships given to girl students</div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <i class="fa-solid fa-indian-rupee-sign fa-3x text-success"></i>
-      <div class="impact-counter" data-count="40000000">0</div>
-      <p>₹4 crore+ scholarships distributed</p>
+
+    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="p-4 shadow rounded bg-light h-100 d-flex flex-column align-items-center counter-card">
+        <i class="fa-solid fa-indian-rupee-sign fa-3x text-primary mb-3"></i>
+        <div class="fs-2 fw-bold">₹4 Crore+</div>
+        <div class="fs-6 mt-2">Worth of scholarships distributed so far</div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <i class="fa-solid fa-school fa-3x text-warning"></i>
-      <div class="impact-counter" data-count="50">0</div>
-      <p>50+ educational institutes in Jodhpur & Barmer</p>
+
+    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+      <div class="p-4 shadow rounded bg-light h-100 d-flex flex-column align-items-center counter-card">
+        <i class="fa-solid fa-school fa-3x text-primary mb-3"></i>
+        <div class="fs-2 fw-bold">50+</div>
+        <div class="fs-6 mt-2">Educational institutes covered in Jodhpur & Barmer</div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <i class="fa-solid fa-hand-holding-heart fa-3x text-danger"></i>
-      <div class="impact-counter" data-count="2000">0</div>
-      <p>48 lakhs to 2,000 girl students (last session)</p>
+
+    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+      <div class="p-4 shadow rounded bg-light h-100 d-flex flex-column align-items-center counter-card">
+        <i class="fa-solid fa-money-bill-wave fa-3x text-primary mb-3"></i>
+        <div class="fs-2 fw-bold">₹48 Lakhs</div>
+        <div class="fs-6 mt-2">Scholarship amount distributed last session among 2,000+ girls</div>
+      </div>
     </div>
+
   </div>
 </section>
+
 
 <!-- Torch Bearers -->
 <section class="container my-5">
@@ -113,7 +136,7 @@
         <div class="card-body">
           <h5 class="card-title">Maa Basanti Manihar</h5>
           <p class="card-text">Co-founder, expert in women empowerment and rural upliftment programs.</p>
-          <a href="/basanti_maa.html" class="btn btn-primary">Read more</a>
+          <a href="./basanti_maa.html" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>
@@ -123,7 +146,7 @@
         <div class="card-body">
           <h5 class="card-title">Maa Madhu Advani</h5>
           <p class="card-text">Managing Trustee, strategic mentor, and educational leader, known for impact-driven initiatives.</p>
-          <a href="/madhu_maa.html" class="btn btn-primary">Read more</a>
+          <a href="./madhu_maa.html" class="btn btn-primary">Read more</a>
         </div>
       </div>
     </div>
@@ -139,7 +162,7 @@
       <div class="card-body">
         <h5 class="card-title">Our Objectives</h5>
         <p class="card-text">Fostering education, supporting underprivileged girls, and nurturing talent in rural Rajasthan.</p>
-        <a href="#" class="card-link">Read more</a>
+        <a href="./objectives.html" class="card-link">Read more</a>
       </div>
     </div>
     <div class="card shadow">
@@ -147,7 +170,7 @@
       <div class="card-body">
         <h5 class="card-title">Unique Features</h5>
         <p class="card-text">Transparent scholarship process, strong local network, and holistic women-centric programs.</p>
-        <a href="#" class="card-link">Read more</a>
+        <a href="./features.html" class="card-link">Read more</a>
       </div>
     </div>
     <div class="card shadow">
@@ -155,7 +178,7 @@
       <div class="card-body">
         <h5 class="card-title">Awards & Recognition</h5>
         <p class="card-text">Multiple state and national awards recognizing educational and social excellence.</p>
-        <a href="#" class="card-link">Read more</a>
+        <a href="./awards.html" class="card-link">Read more</a>
       </div>
     </div>
   </div>
@@ -176,7 +199,7 @@
           <div class="card-body">
             <h5 class="card-title">Priya Sen</h5>
             <p class="card-text">From village to medical college, enabled by scholarship.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <a href="./story1.html" class="btn btn-primary">Read more</a>
           </div>
         </div>
       </div>
@@ -187,7 +210,7 @@
           <div class="card-body">
             <h5 class="card-title">Geeta Choudhary</h5>
             <p class="card-text">Excelled in STEM, now gives back as mentor.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <a href="./story2.html" class="btn btn-primary">Read more</a>
           </div>
         </div>
       </div>
@@ -198,7 +221,7 @@
           <div class="card-body">
             <h5 class="card-title">Suresh Meena</h5>
             <p class="card-text">First in family to graduate; leads community workshops.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <a href="./story3.html" class="btn btn-primary">Read more</a>
           </div>
         </div>
       </div>
@@ -210,7 +233,7 @@
           <div class="card-body">
             <h5 class="card-title">Suresh Meena</h5>
             <p class="card-text">First in family to graduate; leads community workshops.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <a href="./story4.html" class="btn btn-primary">Read more</a>
           </div>
         </div>
       </div>
@@ -274,7 +297,7 @@
         <img src="../images/sch_prg.jpeg" class="card-img-top" alt="Scholarship Programme">
         <div class="card-body">
           <h5 class="card-title">
-            <a href="https://example.com/scholarship-programme" target="_blank" rel="noopener noreferrer">Scholarship Programme</a>
+            <a href="./gallery_scholarship.html" target="_blank" rel="noopener noreferrer">Scholarship Programme</a>
           </h5>
           <p class="card-text">See our ongoing and past scholarship award events for deserving girls.</p>
         </div>
@@ -285,7 +308,7 @@
         <img src="../images/news3.jpg" class="card-img-top" alt="Trust in News">
         <div class="card-body">
           <h5 class="card-title">
-            <a href="https://example.com/trust-in-news" target="_blank" rel="noopener noreferrer">Trust in News</a>
+            <a href="./gallery_news.html" target="_blank" rel="noopener noreferrer">Trust in News</a>
           </h5>
           <p class="card-text">Coverage of our initiatives in leading regional and national media outlets.</p>
         </div>
@@ -300,8 +323,18 @@
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
   <!-- Main JS -->
   <script src="script.js"></script>
+
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+</script>
 
   <!-- JS to load partials -->
   <script>
@@ -318,4 +351,3 @@
     loadHTML('footer-placeholder', 'footer.html');
   </script></body>
 </html>
-
