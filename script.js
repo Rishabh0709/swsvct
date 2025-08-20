@@ -1,12 +1,12 @@
  // Shrink navbar logo on scroll
-  window.addEventListener("scroll", function() {
-    const nav = document.getElementById('mainNav');
-    if(window.scrollY > 50) {
-      nav.classList.add('shrink');
-    } else {
-      nav.classList.remove('shrink');
-    }
-  });
+  window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header-wrapper');
+  if(window.scrollY > 40) {   // threshold equals top bar height
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
   // Counter animation for "Our Impact"
   document.addEventListener("DOMContentLoaded", function(){
     function animateCounter(el) {

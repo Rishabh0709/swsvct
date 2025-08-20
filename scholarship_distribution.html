@@ -161,6 +161,133 @@
         </tbody>
       </table>
     </section>
+	
+
+<section class="container my-5" style="max-width: 700px;">
+  <h2 class="mb-4 text-center" style="color:#1a237e; font-weight:700;">Scholarship Selection Criteria</h2>
+
+  <div class="accordion" id="criteriaAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Female student enrolled in accredited institution
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#criteriaAccordion">
+        <div class="accordion-body">
+          Eligible students must be female and currently enrolled in any recognized school, college, or university.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Proof of financial need
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#criteriaAccordion">
+        <div class="accordion-body">
+          Financial need should be substantiated by income certificates or relevant official documents.
+        </div>
+      </div>
+    </div>
+    <!-- Add more accordion items as needed -->
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="text-center mb-5" style="color:#1a237e; font-weight:700;">Student Selection Procedure</h2>
+
+  <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+    <!-- Step 1 -->
+    <div class="step-card text-center p-4 m-3 position-relative">
+      <div class="step-number mb-2">1</div>
+      <h5>Application Submission</h5>
+      <p>Students submit scholarship applications with complete documents by the deadline.</p>
+    </div>
+
+    <div class="arrow d-none d-md-block"></div>
+
+    <!-- Step 2 -->
+    <div class="step-card text-center p-4 m-3 position-relative">
+      <div class="step-number mb-2">2</div>
+      <h5>Document Verification</h5>
+      <p>The Trust verifies financial and academic documents submitted by applicants.</p>
+    </div>
+
+    <div class="arrow d-none d-md-block"></div>
+
+    <!-- Step 3 -->
+    <div class="step-card text-center p-4 m-3 position-relative">
+      <div class="step-number mb-2">3</div>
+      <h5>Shortlisting Candidates</h5>
+      <p>Eligible candidates are shortlisted based on criteria and document checks.</p>
+    </div>
+
+    <div class="arrow d-none d-md-block"></div>
+
+    <!-- Step 4 -->
+    <div class="step-card text-center p-4 m-3 position-relative">
+      <div class="step-number mb-2">4</div>
+      <h5>Final Selection & Awarding</h5>
+      <p>Selected students receive scholarship awards and follow-up support.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .step-card {
+    background: #f8fafd;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 12px rgba(26, 35, 126, 0.1);
+    max-width: 260px;
+  }
+  .step-number {
+    background-color: #1a237e;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  .arrow {
+    width: 50px;
+    height: 4px;
+    background-color: #1a237e;
+    position: relative;
+  }
+  .arrow::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid #1a237e;
+  }
+
+  /* Mobile styling - arrows hidden, vertical layout */
+  @media (max-width: 767px) {
+    .arrow {
+      display: none !important;
+    }
+    .d-flex {
+      flex-direction: column !important;
+      align-items: center !important;
+    }
+    .step-card {
+      max-width: 100% !important;
+      margin: 1rem 0 !important;
+    }
+  }
+</style>
+
+
   </main>
 
   <!-- Footer -->
